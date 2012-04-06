@@ -87,7 +87,7 @@ Use the ``bound`` method to check if any handlers are registered for an event:
     // Returns: TRUE.
     $bound = Event::bound('router.match');
 
-Use the ``fired`` method to check if an event has fired. 
+Use the ``fired`` method to check if an event has fired:
 
     // Fire the event:
     Event::fire('router.match');
@@ -95,7 +95,7 @@ Use the ``fired`` method to check if an event has fired.
     // Returns: TRUE.
     $fired = Event::fired('router.match');
 
-Use the ``reset`` method to clear flag indicating an event has fired. If called without an argument, all event counters are reset.
+Use the ``reset`` method to clear the flag indicating an event has fired. If called without an argument, all event counters are reset.
 
     // Clear the 'fire' count for the event:
     Event::reset('router.match');
@@ -113,3 +113,5 @@ The ``unbind`` method deregisters the handlers for an event:
 
     // Returns NULL as all handlers have been removed:
     Event::fire('router.match');
+
+If called without an argument, the ``unbind`` method will remove the handlers for all events.
