@@ -114,4 +114,11 @@ The ``unbind`` method deregisters the handlers for an event:
     // Returns NULL as all handlers have been removed:
     Event::fire('router.match');
 
+### Retrieve all bound events
+Use the ``get_bound_events`` method to retrieve all events that have any handlers registered:
+
+    // Returns: Array
+    $bound = Event::get_all_bound();
+
+
 If called without an argument, the ``unbind`` method will remove the handlers for all events.
