@@ -87,10 +87,10 @@ Use the ``bound`` method to check if any handlers are registered for an event:
     // Returns: TRUE.
     $bound = Event::bound('router.match');
 
-Use the ``get_all_bound`` method to retrieve all events that have any handlers registered:
+Use the ``names`` method to retrieve all events that have any handlers registered:
 
     // Returns: Array
-    $bound_events = Event::get_all_bound();
+    $bound_events = Event::names();
 
 Use the ``fired`` method to check if an event has fired:
 

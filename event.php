@@ -223,7 +223,7 @@ class Event {
    *
    * @return array
    */
-  public static function get_all_bound(){
+  public static function names(){
     return array_keys(static::$events);
 }
 
