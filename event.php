@@ -219,6 +219,15 @@ class Event {
   }
 
   /**
+   * Returns the list of bound events
+   *
+   * @return array
+   */
+  public static function names(){
+    return array_keys(static::$events);
+}
+
+  /**
    * Remove an element from an array, or clear an entire array.
    *
    * @param  array  $array The array.
